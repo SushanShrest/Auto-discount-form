@@ -1,13 +1,12 @@
-import React from 'react'
-import MainPage from './pages/MainPage'
+import React from "react";
+import MainPage from "./pages/MainPage";
+import ReactMainPage from "./pages/ReactMainPage";
 
-
-const App:React.FC = () => {
+const App: React.FC = () => {
   return (
+    // <MainPage/>
+    <ReactMainPage />
+  );
+};
 
-      <MainPage/>
-  
-  )
-}
-
-export default App
+export default App;

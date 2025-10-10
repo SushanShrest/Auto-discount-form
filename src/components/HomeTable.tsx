@@ -86,7 +86,12 @@ const HomeTable: React.FC<HomeTableProps> = ({
 
   return (
     <div>
-      <Table dataSource={data} columns={columns} />
+      <Table
+        dataSource={data}
+        columns={columns}
+        rowKey={(record) => record.productName} //Added rowKey to ensure your data items include a unique key property.
+        scroll={{ x: "max-content" }}
+      />
     </div>
   );
 };

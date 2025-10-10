@@ -1,10 +1,5 @@
 import React, { useEffect, type Dispatch, type SetStateAction } from "react";
 
-interface Product {
-  productName: string;
-  quantity: number;
-  price: number;
-}
 
 interface FormDataProps {
   productName: string | null;
@@ -72,7 +67,7 @@ const Form: React.FC<FormProps> = ({
 
   return (
     <div>
-      <form className="space-y-4">
+      <form className="space-y-4" >
         {/* Product Name */}
         <div className="flex flex-col">
           <label htmlFor="productName" className="font-medium mb-1">
@@ -121,7 +116,8 @@ const Form: React.FC<FormProps> = ({
           </div>
         </div>
 
-        {/* Total Amount */}
+        {
+        /* Total Amount */}
         <div className="flex flex-col">
           <label htmlFor="totalAmount" className="font-medium mb-1">
             Total Amount
