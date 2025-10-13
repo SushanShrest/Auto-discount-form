@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { PlusOutlined } from "@ant-design/icons";
 import { Button, Modal } from "antd";
-import ReactHookForm from "../components/ReactHookForm";
-import HomeTable from "../components/HomeTable";
+import ReactHookForm from "../components/Working/ReactHookForm";
+import HomeTable from "../components/Working/HomeTable";
+import YupForm from "../components/Working/Yup"
 
 interface Product {
   productName: string;
@@ -74,7 +75,21 @@ const ReactMainPage: React.FC = () => {
         // onOk={handleOk}
         // onCancel={handleCancel}
       >
-        <ReactHookForm setIsModalOpen={setIsModalOpen} totalAmount={totalAmount} discountPercent={discountPercent} discountAmount={discountAmount} finalAmount={finalAmount}/>
+        {/* <ReactHookForm
+          setIsModalOpen={setIsModalOpen}
+          totalAmount={totalAmount}
+          discountPercent={discountPercent}
+          discountAmount={discountAmount}
+          finalAmount={finalAmount}
+        /> */}
+
+        <YupForm
+          setIsModalOpen={setIsModalOpen}
+          totalAmount={totalAmount}
+          discountPercent={discountPercent}
+          discountAmount={discountAmount}
+          finalAmount={finalAmount}
+        />
       </Modal>
     </div>
   );

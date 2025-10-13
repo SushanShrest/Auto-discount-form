@@ -1,8 +1,8 @@
 import { PlusOutlined } from "@ant-design/icons";
 import { Button, Modal } from "antd";
 import React, { useEffect, useState } from "react";
-import Form from "../components/Form";
-import HomeTable from "../components/HomeTable";
+import Form from "../components/Working/Form";
+import HomeTable from "../components/Working/HomeTable";
 
 interface Product {
   productName: string;

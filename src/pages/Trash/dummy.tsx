@@ -1,20 +1,49 @@
 import { PlusOutlined } from "@ant-design/icons";
 import { Button, Modal } from "antd";
 import React, { useState } from "react";
-import Form from "../components/Form";
+import Form from "../components/Working/Form";
 
 const MainPage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const DummyData =[{
-    'productName':'Copies','quantity':200,'price':50,'totalAmt':10000,'discPercent':10,'discAmt':1000,'finalAmt':9000
-  },{
-    'productName':'Pens','quantity':500,'price':10,'totalAmt':5000,'discPercent':5,'discAmt':250,'finalAmt':4750
-  },{
-    'productName':'Footballs','quantity':10,'price':200,'totalAmt':1000,'discPercent':0,'discAmt':0,'finalAmt':1000
-  },{
-    'productName':'Chocolates','quantity':50,'price':2,'totalAmt':1000,'discPercent':0,'discAmt':0,'finalAmt':1000
-  }]
+  const DummyData = [
+    {
+      productName: "Copies",
+      quantity: 200,
+      price: 50,
+      totalAmt: 10000,
+      discPercent: 10,
+      discAmt: 1000,
+      finalAmt: 9000,
+    },
+    {
+      productName: "Pens",
+      quantity: 500,
+      price: 10,
+      totalAmt: 5000,
+      discPercent: 5,
+      discAmt: 250,
+      finalAmt: 4750,
+    },
+    {
+      productName: "Footballs",
+      quantity: 10,
+      price: 200,
+      totalAmt: 1000,
+      discPercent: 0,
+      discAmt: 0,
+      finalAmt: 1000,
+    },
+    {
+      productName: "Chocolates",
+      quantity: 50,
+      price: 2,
+      totalAmt: 1000,
+      discPercent: 0,
+      discAmt: 0,
+      finalAmt: 1000,
+    },
+  ];
   const showModal = () => {
     setIsModalOpen(true);
   };
